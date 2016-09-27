@@ -3,6 +3,10 @@ Meteor Package (soon released on atmosphere) which wraps the bpmn  tools from ht
 
 Provides templates to include the examples from https://github.com/bpmn-io/bpmn-js-examples.
 
+### Important Note
+
+This package is not stable and currently in a 'proof-of-concept' phase. Use at your own risk. Feel free to contribute and improve this package. 
+
 ### Install / Include
 
 Add the package like any other:
