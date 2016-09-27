@@ -29,3 +29,7 @@ Including the modeler is just using the spacebars
 It should run out of the box. The template also provides a helper `getModeler` whcih returns the modeler object. From here you can further customize your modeler.
 
 Other examples will follow.
+
+### License
+
+MIT (unless noted otherwise)
