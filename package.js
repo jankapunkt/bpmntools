@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jkuester:bpmntools',
-  version: '0.0.1',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Integrate the bpmn.io tools into a meteor package with templates.',
   // URL to the Git repository containing the source code for this package.
@@ -16,10 +16,28 @@ Package.onUse(function(api) {
   api.use('jquery');
   api.use('less');
   api.use(['templating'], 'client');
+  //add styles
   api.addFiles( 'lib/stylesheets/app.css', [ 'client' ]);
-  api.addFiles( 'lib/stylesheets/properties-panel.less', [ 'client' ], {isImport:false});
+
+  //add less (properties panel)
+
+  api.addFiles( 'lib/stylesheets/properties-panel.less', [ 'client' ]);
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/properties.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/_variables.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/_mixins.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/tabs.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/groups.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/header.less', [ 'client' ], {isAsset:true,isImport:false});
+  api.addFiles( '.npm/package/node_modules/bpmn-js-properties-panel/styles/listeners.less', [ 'client' ], {isAsset:true,isImport:false});
+
+
+  //add templates
   api.addFiles( 'lib/templates/modeler/modeler.js', [ 'client' ] );
+  api.addFiles( 'lib/templates/colors/colors.js', [ 'client' ] );
   api.addFiles( 'lib/templates/properties-panel/properties-panel.js', [ 'client' ] );
+
+  //add client assets
+  api.addFiles( 'lib/resources/pizza-collaboration.bpmn', ['client'], {isAsset:true} );
   api.mainModule('bpmntools.js');
 });
 
