@@ -18,17 +18,35 @@ $ meteor add jkuester:bpmntools
 The npm dependencies are loaded via the package.
 The templates can be included by simply using spacebars.
 
-##### Example
+##### Using the Examples
 
-Including the modeler is just using the spacebars
+Including the examples is easy by just including the spacebar templates. The following templates are currently available:
+
+###### Modeler
 
 ```
 {{> bpmnmodeler}}
 ```
 
-It should run out of the box. The template also provides a helper `getModeler` whcih returns the modeler object. From here you can further customize your modeler.
+It should run out of the box. The template also provides a helper `getModeler` which returns the modeler object. From here you can further customize your modeler.
 
-Other examples will follow.
+
+###### Modeler with Properties-Panel
+
+```
+{{> propertiespanel}}
+```
+
+The modeler itself runs out of the box. The properties Panel is also working. There is an issue left - the .less Code is still not loaded, since this is related to a Meteor problem with loading external less in a package from a node_module.
+
+###### Colors
+
+```
+{{> bpmncolors}}
+```
+
+Includes a static viewer with a loaded bpmn schema and highlights some elements.
+
 
 ### License
 
