@@ -1,12 +1,10 @@
-## Add this file to your meteor package as `.travis.yml`
-
 sudo: required
 language: node_js
 node_js:
   - "0.10"
-  
+
 before_install:
-  - "curl -L http://git.io/ejPSng | /bin/sh"
+  - "curl -L https://git.io/ejPSng | /bin/sh"
 
 env:
   - CXX=g++-4.8
@@ -15,4 +13,4 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-- g++-4.8
+      - g++-4.8
