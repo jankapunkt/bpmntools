@@ -1,11 +1,14 @@
 # jkuester:bpmntools
-Meteor Package (soon released on atmosphere) which wraps the bpmn  tools from http://bpmn.io / https://github.com/bpmn-io into a meteor package.
+
+[![Build Status](https://travis-ci.org/jankapunkt/bpmntools.svg?branch=master)](https://travis-ci.org/jankapunkt/bpmntools)
+
+Meteor Package which wraps the bpmn  tools from http://bpmn.io / https://github.com/bpmn-io into a meteor package.
 
 Provides templates to include the examples from https://github.com/bpmn-io/bpmn-js-examples.
 
 ### Important Note
 
-This package is not stable and currently in a 'proof-of-concept' phase. Use at your own risk. Feel free to contribute and improve this package. 
+This package is working but still in a 'proof-of-concept' phase. Use at your own risk. Feel free to contribute and improve this package. 
 
 ### Install / Include
 
