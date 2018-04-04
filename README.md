@@ -1,7 +1,17 @@
 # jkuester:bpmntools
 
 [![Build Status](https://travis-ci.org/jankapunkt/bpmntools.svg?branch=master)](https://travis-ci.org/jankapunkt/bpmntools)
+[![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](http://www.repostatus.org/badges/latest/abandoned.svg)](http://www.repostatus.org/#abandoned)
 
+
+# This package is no longer maintained due to more recent replacements. If you are still interested in the BPMN modeler, please check out the following projects:
+
+[jkuester:autoform-bpmn](https://github.com/jankapunkt/meteor-autoform-bpmn) - integrate the bpmn-js modeler as an extension for `aldeed:autoform`
+
+
+
+
+<hr>
 Meteor Package which wraps the bpmn  tools from http://bpmn.io / https://github.com/bpmn-io into a meteor package.
 
 Provides templates to include the examples from https://github.com/bpmn-io/bpmn-js-examples.
